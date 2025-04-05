@@ -21,7 +21,7 @@ const Certificate = () => {
     return (
       <>
     <section id="certificate" className="container mx-auto my-12 p-4 lg:mt-36 mt-16 md:py-12" >
-    <h2 className="md:text-5xl text-4xl font-extrabold text-center text-sky-200 pt-6 mb-12" data-aos="fade-up">
+    <h2 className="md:text-5xl text-4xl font-extrabold text-center text-sky-200 pt-6 mb-12" data-aos="fade-up" >
     Certificates
     </h2>
 
@@ -34,7 +34,8 @@ const Certificate = () => {
             alt={cert.alt}
             className="rounded-lg hover:scale-105 transition-transform duration-300"
             data-aos="zoom-in"
-            data-aos-delay={`${index * 100}`}
+            data-aos-delay={`${index * 50}`}
+            data-aos-offset="150"
           />
         ))}
     </div>

@@ -16,8 +16,7 @@ function App() {
     AOS.init({
       duration: 800,
       easing: 'ease-in-out',
-      once: false,
-      offset: 80,
+      once: true,
     });
     window.addEventListener('load', AOS.refresh);
   }, []);

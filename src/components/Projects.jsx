@@ -23,7 +23,7 @@ const Projects = () => {
   return (
     <section id="projects" className="container mx-auto my-12 p-4 lg:mt-36 mt-16 md:py-12">
       <h2 className="md:text-5xl text-4xl font-extrabold text-center text-sky-200 pt-6 mb-12" 
-      data-aos="fade-up">
+      data-aos="fade-up" >
       Projects
       </h2>
 

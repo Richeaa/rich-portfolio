@@ -18,7 +18,7 @@ const Navbar = () => {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 border-b-2">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 border-b-2" data-aos="fade-down" >
             <div className="relative flex h-24 items-center justify-between">
               <div className="flex items-center">
                 <h1 className="text-2xl text-neutral-50 font-bold">
