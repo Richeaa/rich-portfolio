@@ -22,14 +22,17 @@ const Projects = () => {
 
   return (
     <section id="projects" className="container mx-auto my-12 p-4 lg:mt-36 mt-16 md:py-12">
-      <h2 className="md:text-5xl text-4xl font-extrabold text-center text-sky-200 pt-6 mb-12">
-        Projects
+      <h2 className="md:text-5xl text-4xl font-extrabold text-center text-sky-200 pt-6 mb-12" 
+      data-aos="fade-up">
+      Projects
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[120px] md:auto-rows-[170px] px-3 md:px-0 gap-y-8 md:gap-y-4">
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <div
             key={project.id}
+            data-aos="fade-up"
+            data-aos-delay = {index * 80}
             className={`bg-slate-800 bg-opacity-75 border border-gray-300 p-4 rounded-lg shadow-md flex flex-col items-center cursor-pointer border-2 transition-all duration-300 ease-in-out hover:bg-opacity-90 hover:border-cyan-300 hover:scale-105  ${project.span}`}
             onClick={() => setSelectedProject(project)}
           >

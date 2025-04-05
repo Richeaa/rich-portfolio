@@ -8,12 +8,14 @@ const Footer = () => {
       <div className="relative z-10">
         <div className="container mx-auto px-3 md:px-0">
           <div className="flex flex-col items-center">
-            <h2 className="md:text-4xl text-3xl font-bold mb-4">Let's Connect</h2>
-            <p className="mb-8 text-center md:text-2xl text-md px-3">
+            <h2 className="md:text-4xl text-3xl font-bold mb-4" data-aos="fade-up">Let's Connect</h2>
+            <p className="mb-8 text-center md:text-2xl text-md px-3"  data-aos="fade-up"
+          data-aos-delay="100">
               Interested in working together or have any questions? Feel free to reach out!
             </p>
             
-            <div className="flex space-x-4 mb-8">
+            <div className="flex space-x-4 mb-8"  data-aos="zoom-in"
+          data-aos-delay="200">
               <a href="https://wa.me/628114585676" target="_blank"
                   rel="noopener noreferrer" className="hover:text-sky-200 transition">
                 <FaWhatsapp className="w-6 h-6 md:w-8 md:h-8" />
@@ -32,7 +34,8 @@ const Footer = () => {
               </a>
             </div>
             
-            <p className="md:text-xl text-lg text-sky-100 text-center">
+            <p className="md:text-xl text-lg text-sky-100 text-center"  data-aos="fade-up"
+          data-aos-delay="300">
               © {new Date().getFullYear()} Richeaa. All rights reserved.
             </p>
           </div>

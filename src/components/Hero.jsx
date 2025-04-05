@@ -8,11 +8,11 @@ const Hero = () => {
     <div className="container mx-auto md:mt-32 h-auto flex justify-between flex-wrap">
 
       <div className=" w-full lg:w-3/5 h-auto order-2 lg:order-1 text-sky-100 p-6 text-center lg:text-left">
-        <h1 className="font-bold lg:text-5xl text-2xl mt-8 lg:mt-36 lg:ms-9 mb-5">Hi! 欢迎</h1>
-        <h1 className="font-bold lg:text-5xl text-2xl lg:ms-9 mb-5">
+        <h1 className="font-bold lg:text-5xl text-2xl mt-8 lg:mt-36 lg:ms-9 mb-5" data-aos="fade-right"  data-aos-delay="100">Hi! 欢迎</h1>
+        <h1 className="font-bold lg:text-5xl text-2xl lg:ms-9 mb-5" data-aos="fade-left"  data-aos-delay="100">
           I'm <span className="text-sky-300">Rich</span> Edrick Anthonios
         </h1>
-        <p className="lg:ms-9 font-semibold lg:text-4xl text-xl text-sky-300 mb-10">
+        <p className="lg:ms-9 font-semibold lg:text-4xl text-xl text-sky-300 mb-10"  data-aos="fade-right" data-aos-delay="200">
           <TypeWriter
             options={{
               strings: ["Data Enthusiast", "Front-End Developer", "WordPress Developer"],
@@ -23,7 +23,7 @@ const Hero = () => {
           />
         </p>
         
-      <div className="flex justify-center lg:justify-start lg:ms-8">
+      <div className="flex justify-center lg:justify-start lg:ms-8" data-aos="zoom-in" data-aos-delay="300">
         <a 
         href={CV}
         download="CV_RichEdrickAnthonios.pdf" 
@@ -37,7 +37,7 @@ const Hero = () => {
       </div>
 
       <div className=" w-full lg:w-2/5 h-auto order-1 lg:order-2 flex items-center justify-center lg:mt-8 mt-16 ">
-      <div className="max-w-4/5 h-auto flex items-center justify-center   lg:my-10">
+      <div className="max-w-4/5 h-auto flex items-center justify-center lg:my-10" data-aos="fade-left" data-aos-delay="400">
       <Lottie 
       animationData={animation}
       loop={true}

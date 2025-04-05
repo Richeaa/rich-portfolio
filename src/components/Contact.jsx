@@ -46,12 +46,13 @@ const Contact = () => {
 
     return (
         <section id="contact" className="container mx-auto my-12 p-4 lg:mt-36 mt-16 md:py-12 flex flex-col justify-center">
-            <h1 className="md:text-5xl text-4xl font-extrabold text-center text-sky-200 pt-6 mb-12">
+            <h1 className="md:text-5xl text-4xl font-extrabold text-center text-sky-200 pt-6 mb-12" data-aos="fade-up">
                 Contact
             </h1>
 
             <div className="flex flex-wrap lg:flex-nowrap items-stretch px-3 md:px-0"> 
-                <div className="w-full lg:w-1/3 flex flex-col justify-center">
+                <div className="w-full lg:w-1/3 flex flex-col justify-center" data-aos="fade-right"
+                data-aos-delay="200">
                 <TrueFocus 
                     sentence="Let's Work Together!"
                     manualMode={false}
@@ -63,7 +64,8 @@ const Contact = () => {
 
                 </div>
 
-                <div className="w-full lg:w-2/3 pl-0 lg:pl-6">
+                <div className="w-full lg:w-2/3 pl-0 lg:pl-6" data-aos="fade-left"
+                    data-aos-delay="300">
                     <form 
                         onSubmit={sendEmail}
                         className="h-full p-6 rounded-lg border border-gray-700 bg-gray-900/60 bg-opacity-50 flex flex-col"
