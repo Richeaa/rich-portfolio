@@ -6,15 +6,17 @@ import Image3 from '../assets/ProjectAsset/3.png';
 import Image4 from '../assets/ProjectAsset/4.jpg';
 import Image5 from '../assets/ProjectAsset/5.png';
 import Image6 from '../assets/ProjectAsset/6.png';
+import Image7 from '../assets/ProjectAsset/7.png';
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
   { id: 1, title: "Basic Semantic Website", tools: ["Html", "Css"], description: "A modern web app.", link: "https://richeaa.github.io/SimpleSemanticWeb/", image: Image2, span: "row-span-2" },
-  { id: 2, title: "AkuLapar", tools: ["Php", "JavaScript", "MySql"], description: "A website where users can find a lot of restaurant around Indonesia.", link: "https://github.com/Richeaa/Restaurant-Food-Website", image: Image1, span: "row-span-2 md:row-span-1" },
+  { id: 2, title: "AkuLapar", tools: ["Php", "JavaScript", "MySql"], description: "A website where users can find a lot of restaurant around Indonesia.", link: "https://github.com/Richeaa/Restaurant-Food-Website", image: Image1, span: "row-span-2 " },
   { id: 3, title: "Bicycle Usage Pattern", tools: ["Python", "Streamlit"], description: "Data analysis project that focuses on bicycle usage patterns based on various factors such as weather, weekdays, etc.", link: "https://richcode.streamlit.app/", image: Image3, span: "row-span-2" },
-  { id: 4, title: "Flick Tutor", tools: ["Bootstrap"], description: "A static website that showcases a variety of services and features designed to connect students with expert tutors across multiple subjects.", link: "https://richeaa.github.io/Tutor-Website/", image: Image4, span: "row-span-2 md:row-span-3" },
+  { id: 4, title: "Flick Tutor", tools: ["Bootstrap"], description: "A static website that showcases a variety of services and features designed to connect students with expert tutors across multiple subjects.", link: "https://richeaa.github.io/Tutor-Website/", image: Image4, span: "row-span-2 " },
   { id: 5, title: "Toko Mega Makmur", tools: ["Wordpress", "Hostinger"], description: "Website that provides all handyman equipment needs.", link: "https://tokomegamakmur.com/", image: Image5, span: "row-span-2" },
   { id: 6, title: "Portofolio", tools: ["React", "Vite"], description: "Portofolio website", link: "#", image: Image6, span: "row-span-2" },
+  { id: 7, title: "Machine Learning", tools: ["Python", "Django"], description: "Group project for data science students where we have to create a web including models, views, predictions, etc using django framework.", link: "https://github.com/Richeaa/dsproject", image: Image7, span: "row-span-2" },
 ];
 
 const Projects = () => {

@@ -1,5 +1,6 @@
 import { FaHtml5, FaCss3, FaJs, FaBootstrap, FaWordpress, FaPython, } from "react-icons/fa";
 import { SiTailwindcss, SiMysql, SiGooglecolab, SiJupyter } from "react-icons/si";
+import powerbi from '../assets/SkillsAsset/1.png';
 
 const Skills = () => {
   const skills = [
@@ -13,6 +14,7 @@ const Skills = () => {
     { name: "Python", icon: <FaPython className="text-blue-300" /> }, 
     { name: "Colab", icon: <SiGooglecolab className="text-yellow-400" /> }, 
     { name: "Jupyter", icon: <SiJupyter className="text-orange-400" /> }, 
+    { name: "Power BI", icon: <img src={powerbi} alt="Power BI" className="w-8 h-8" /> },
 ];
 
 
