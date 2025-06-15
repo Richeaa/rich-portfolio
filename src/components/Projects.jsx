@@ -24,10 +24,14 @@ const Projects = () => {
 
   return (
     <section id="projects" className="container mx-auto my-12 p-4 lg:mt-36 mt-16 md:py-12">
-      <h2 className="md:text-5xl text-4xl font-extrabold text-center text-sky-200 pt-6 mb-12" 
-      data-aos="fade-up" >
+    <div className="text-center mb-12">
+      <h2 className="md:text-5xl text-4xl font-extrabold bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent pt-4 p-2" 
+    data-aos="fade-up">
       Projects
       </h2>
+       <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-sky-400 mx-auto mt-4" data-aos="zoom-in" data-aos-offset="200"></div>
+    </div>
+    
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[120px] md:auto-rows-[170px] px-3 md:px-0 gap-y-8 md:gap-y-4">
         {projects.map((project, index) => (
@@ -35,10 +39,10 @@ const Projects = () => {
             key={project.id}
             data-aos="fade-up"
             data-aos-delay = {index * 80}
-            className={`bg-slate-800 bg-opacity-75 border border-gray-300 p-4 rounded-lg shadow-md flex flex-col items-center cursor-pointer border-2 transition-all duration-300 ease-in-out hover:bg-opacity-90 hover:border-cyan-300 hover:scale-105  ${project.span}`}
+            className={`bg-slate-800 bg-opacity-75 border border-gray-300 p-4 rounded-lg shadow-md flex flex-col items-center cursor-pointer border-2 hover:transition hover:bg-opacity-90 hover:border-blue-400  ${project.span}`}
             onClick={() => setSelectedProject(project)}
           >
-            <img src={project.image} alt={project.title} className="w-full h-full object-cover rounded-lg" />
+            <img src={project.image} alt={project.title} className="w-full h-full object-cover rounded-lg " />
           </div>
         ))}
       </div>
@@ -78,7 +82,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
               >
                 <div className="flex justify-center items-center gap-1">
-                <span>Visit Site</span>
+                <span>View Project</span>
                 <FaExternalLinkAlt className="text-sm" />
                 </div>
 

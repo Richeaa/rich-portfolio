@@ -12,7 +12,7 @@ const Hero = () => {
         <h1 className="font-bold lg:text-5xl text-2xl lg:ms-9 mb-5" data-aos="fade-left"  data-aos-delay="100">
           I'm <span className="text-sky-300">Rich</span> Edrick Anthonios
         </h1>
-        <p className="lg:ms-9 font-semibold lg:text-4xl text-xl text-sky-300 mb-10"  data-aos="fade-right" data-aos-delay="200">
+        <p className="lg:ms-9 font-bold lg:text-4xl text-xl text-sky-300 mb-10"  data-aos="fade-right" data-aos-delay="200">
           <TypeWriter
             options={{
               strings: ["Data Enthusiast", "Front-End Developer", "WordPress Developer"],

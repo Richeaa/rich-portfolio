@@ -46,9 +46,13 @@ const Contact = () => {
 
     return (
         <section id="contact" className="container mx-auto my-12 p-4 lg:mt-36 mt-16 md:py-12 flex flex-col justify-center">
-            <h1 className="md:text-5xl text-4xl font-extrabold text-center text-sky-200 pt-6 mb-12" data-aos="fade-up" data-aos-offset="200">
-                Contact
-            </h1>
+             <div className="text-center mb-12">
+          <h2 className="md:text-5xl text-4xl font-extrabold bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent pt-6" 
+              data-aos="fade-up" data-aos-offset="200">
+            Get in Touch
+          </h2>
+           <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-sky-400 mx-auto mt-4" data-aos="zoom-in" data-aos-offset="200"></div>
+        </div>
 
             <div className="flex flex-wrap lg:flex-nowrap items-stretch px-3 md:px-0"> 
                 <div className="w-full lg:w-1/3 flex flex-col justify-center" data-aos="fade-right"
