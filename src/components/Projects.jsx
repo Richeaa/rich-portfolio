@@ -39,9 +39,10 @@ const Projects = () => {
             key={project.id}
             data-aos="fade-up"
             data-aos-delay = {index * 80}
-            className={`bg-slate-800 bg-opacity-75 border border-gray-300 p-4 rounded-lg shadow-md flex flex-col items-center cursor-pointer border-2 hover:transition hover:bg-opacity-90 hover:border-blue-400  ${project.span}`}
+            className={`bg-slate-800 bg-opacity-75 border border-gray-700 p-4 rounded-lg  flex flex-col items-center cursor-pointer border-2  hover:border-blue-200  ${project.span}`}
             onClick={() => setSelectedProject(project)}
           >
+            
             <img src={project.image} alt={project.title} className="w-full h-full object-cover rounded-lg " />
           </div>
         ))}
@@ -70,7 +71,7 @@ const Projects = () => {
                 ✖
               </button>
               <img src={selectedProject.image} alt={selectedProject.title} className="w-full h-48 object-cover rounded-lg opacity-90" />
-              <h3 className="text-xl font-bold mt-4">{selectedProject.title}</h3>
+              <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 mt-4">{selectedProject.title}</h3>
               <p className="mt-2">{selectedProject.description}</p>
               <p className="mt-2">
                 <span className="font-semibold">Tools:</span> {selectedProject.tools.join(", ")}
