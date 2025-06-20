@@ -1,7 +1,7 @@
 import TypeWriter from "typewriter-effect";
 import Lottie from "lottie-react";
 import animation from "../assets/Animation.json";
-import CV from '../assets/CV/CV_Rich Edrick Anthonios.pdf'
+import CV from '../assets/CV/Rich Edrick Anthonios_CurriculumVitae.pdf'
 
 const Hero = () => {
   return (
@@ -26,7 +26,7 @@ const Hero = () => {
       <div className="flex justify-center lg:justify-start lg:ms-8" data-aos="zoom-in" data-aos-delay="300">
         <a 
         href={CV}
-        download="CV_RichEdrickAnthonios.pdf" 
+        download="RichEdrickAnthonios_CurriculumVitae.pdf" 
         className="flex gap-2 cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800 to-black lg:px-7 lg:py-5 px-3 py-3 rounded-full border border-sky-600 hover:scale-105 duration-200 hover:border-blue-950 hover:from-sky-600 hover:to-cyan-500 ">
         Download CV
         <svg className="animate-bounce" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg" fill="white">

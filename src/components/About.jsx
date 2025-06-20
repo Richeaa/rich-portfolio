@@ -25,7 +25,7 @@ const About = () => {
 
      <div className="w-full lg:w-2/3 h-auto text-white p-6 text-justify flex items-center" data-aos="fade-left"
     data-aos-delay="200" >
-        <h1 className="font-bold lg:text-2xl text-md lg:ms-9 mt-12 lg:mt-none"> 6th-semester Information System student at President University with a GPA of 3.86, concentrating in Data Science. Dedicated and detail-oriented, with a strong passion for organizing and analyzing data. Mostly work with Python and SQL, and experienced in using analytics tools such as Power BI to derive insights and support data-driven decisions. I enjoy building data solutions that are both structured and accessible.
+        <h1 className="font-bold lg:text-2xl text-md lg:ms-9 mt-12 lg:mt-none"> 6th-semester Information System student at President University with a GPA of 3.84, concentrating in Data Science. Dedicated and detail-oriented, with a strong passion for organizing and analyzing data. Mostly work with Python and SQL, and experienced in using analytics tools such as Power BI to derive insights and support data-driven decisions. I enjoy building data solutions that are both structured and accessible.
         <br></br> 
         <br></br>
         During my college year, i actively participated in internal organizations and internship which honed my skills in leadership, teamwork, and problem-solving.
