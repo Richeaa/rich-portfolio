@@ -10,7 +10,7 @@ const About = () => {
 
   return (
     <>
-      <div id="about" className="lg:mt-32 relative overflow-hidden py-20 lg:py-16">
+      <div id="about" className="lg:mt-36 relative overflow-hidden py-20 lg:py-16">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-purple-900/5 to-indigo-900/10"></div>
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
