@@ -3,7 +3,6 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const Navbar = () => {
   const navigation = [
-    { name: 'Home', href: '#home', current: false },
     { name: 'About', href: '#about', current: false },
     { name: 'Projects', href: '#projects', current: false },
     { name: 'Certificate', href: '#certificate', current: false },
@@ -18,7 +17,7 @@ const Navbar = () => {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 border-b-2" data-aos="fade-down" >
+          <div id="home" className="container mx-auto px-4 sm:px-6 lg:px-8 border-b-2" data-aos="fade-down" >
             <div className="relative flex h-24 items-center justify-between">
               <div className="flex items-center">
                 <h1 className="text-2xl text-neutral-50 font-bold">
