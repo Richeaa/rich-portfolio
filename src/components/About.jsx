@@ -2,7 +2,7 @@ import ProfileLogo from "../assets/Profil.png";
 
 const About = () => {
   const highlights = [
-    { number: "3.85", label: "GPA", icon: "🎓" },
+    { number: "3.90", label: "GPA", icon: "🎓" },
     { number: "6th", label: "Semester", icon: "📚" },
     { number: "6+", label: "Volunteer Experience", icon: "🔎" },
     { number: "8+", label: "Projects Completed", icon: "🚀" }
@@ -67,7 +67,7 @@ const About = () => {
                 
                 <div className="space-y-4 text-gray-300 leading-relaxed">
                   <p className="text-base lg:text-lg">
-                    <strong className="text-white">6th-semester Information System student</strong> at President University with a <strong className="text-blue-400">GPA of 3.85</strong>, concentrating in <strong className="text-purple-400">Data Science</strong>.
+                    <strong className="text-white">6th-semester Information System student</strong> at President University with a <strong className="text-blue-400">GPA of 3.90</strong>, concentrating in <strong className="text-purple-400">Data Science</strong>.
                   </p>
                   
                   <p className="text-base lg:text-lg">

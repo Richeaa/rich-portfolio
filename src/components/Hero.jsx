@@ -1,7 +1,7 @@
 import TypeWriter from "typewriter-effect";
 import Lottie from "lottie-react";
 import animation from "../assets/Animation.json";
-import CV from '../assets/CV/Rich Edrick Anthonios_CurriculumVitae.pdf'
+import CV from '../assets/CV/RichEdrickAnthonios_CurriculumVitae.pdf'
 
 const Hero = () => {
   return (

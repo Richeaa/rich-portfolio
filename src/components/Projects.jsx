@@ -7,6 +7,7 @@ import Image4 from '../assets/ProjectAsset/4.jpg';
 import Image5 from '../assets/ProjectAsset/5.png';
 import Image6 from '../assets/ProjectAsset/6.png';
 import Image7 from '../assets/ProjectAsset/7.png';
+import Image8 from '../assets/ProjectAsset/8.png';
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
@@ -17,6 +18,7 @@ const projects = [
   { id: 5, title: "Toko Mega Makmur", tools: ["Wordpress", "Hostinger"], description: "Website that provides all handyman equipment needs.", link: "https://tokomegamakmur.com/", image: Image5, span: "row-span-2" },
   { id: 6, title: "Portofolio", tools: ["React", "Vite"], description: "Portofolio website", link: "#", image: Image6, span: "row-span-2" },
   { id: 7, title: "Machine Learning", tools: ["Python", "Django"], description: "Group project for data science students where we have to create a web including models, views, predictions, etc using django framework.", link: "https://github.com/Richeaa/dsproject", image: Image7, span: "row-span-2" },
+  { id: 8, title: "Movie Recommendation System", tools: ["Python", "Streamlit"], description: "A movie recommendation app that suggests similar movies based on your selected title, leveraging a pretrained model with cosine similarity.", link: "https://rich-movie-recommend-system.streamlit.app/", image: Image8, span: "row-span-2" },
 ];
 
 const Projects = () => {
