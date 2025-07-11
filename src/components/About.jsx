@@ -11,14 +11,14 @@ const About = () => {
   return (
     <>
       <div id="about" className="lg:mt-36 relative overflow-hidden py-20 lg:py-16">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-purple-900/5 to-indigo-900/10"></div>
+        <div className="absolute inset-0"></div>
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
             <h1 
-              className="text-3xl md:text-5xl font-extrabold bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent mb-6"
+              className="text-2xl md:text-4xl font-extrabold bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent mb-6"
               data-aos="fade-up" 
               data-aos-offset="200"
             >
@@ -31,7 +31,6 @@ const About = () => {
           ></div>
           </div>
 
-          {/* Main Content */}
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-6 lg:gap-8 items-center mb-16">
         
             <div 
@@ -62,7 +61,7 @@ const About = () => {
             >
               <div className="space-y-6 text-center lg:text-justify">
                 <h2 className="text-2xl lg:text-3xl font-bold text-white mb-4">
-                  Hello! I'm <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Rich</span>
+                  Hello! I'm <span className="bg-gradient-to-r from-blue-400 to-sky-600 bg-clip-text text-transparent">Rich</span>
                 </h2>
                 
                 <div className="space-y-4 text-gray-300 leading-relaxed">
@@ -98,7 +97,6 @@ const About = () => {
             </div>
           </div>
 
-          {/* Stats/Highlights */}
           <div 
             className="grid grid-cols-2 md:grid-cols-4 gap-6 "
             data-aos="fade-up"
