@@ -1,11 +1,13 @@
 import { 
-  FaHtml5, FaCss3, FaJs, FaBootstrap, FaWordpress, FaPython 
+  FaHtml5, FaCss3, FaJs, FaBootstrap, FaWordpress, FaPython
 } from "react-icons/fa";
 import { 
   SiTailwindcss, SiPhp, SiJupyter, SiPostgresql, SiStreamlit, SiDjango, SiTensorflow, SiGooglecolab 
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import powerbi from "../assets/SkillsAsset/1.png";
+import keras from "../assets/SkillsAsset/2.png";
+
 
 const Skills = () => {
   const skills = [
@@ -24,7 +26,8 @@ const Skills = () => {
     { name: "Django", icon: <SiDjango />, color: "text-green-500" },
     { name: "Streamlit", icon: <SiStreamlit />, color: "text-red-500" },
     { name: "TensorFlow", icon: <SiTensorflow />, color: "text-yellow-600" },
-    { name: "Power BI", icon: <img src={powerbi} alt="Power BI" className="w-12 h-12" />, color: "text-yellow-500" },
+    { name: "Keras", icon: <img src={keras} alt="Keras" className="w-12 h-12" /> },
+    { name: "Power BI", icon: <img src={powerbi} alt="Power BI" className="w-12 h-12" /> },
   ];
 
 
