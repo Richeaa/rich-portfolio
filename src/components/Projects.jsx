@@ -7,65 +7,30 @@ import Image5 from '../assets/ProjectAsset/5.png';
 import Image6 from '../assets/ProjectAsset/6.png';
 import Image7 from '../assets/ProjectAsset/7.png';
 import Image8 from '../assets/ProjectAsset/8.png';
+import Image9 from '../assets/ProjectAsset/9.png';
 import { FaExternalLinkAlt, FaTimes } from "react-icons/fa";
 
 const projects = [
   { 
     id: 1, 
-    title: "Vehicle Classifier", 
-    tools: ["TensorFlow", "Streamlit", "Jupyter Notebook"], 
-    description: "A sophisticated image classification application that accurately distinguishes between cars and motorcycles using advanced deep learning models.", 
-    link: "https://vehicleclassifier.streamlit.app/", 
-    image: Image2, 
-    category: "Machine Learning" 
+    title: "Amazon Sales Analysis Dashboard", 
+    tools: ["Power BI", "DAX", "Power Query"], 
+    description: "A comprehensive Power BI dashboard that visualizes Amazon's sales performance related to sales patterns, product performance, and regional trends.", 
+    link: "https://github.com/Richeaa/amazon-sales-dashboard", 
+    image: Image9, 
+    category: "Data Analyst & Visualization" 
   },
   { 
     id: 2, 
-    title: "AkuLapar", 
-    tools: ["PHP", "JavaScript", "MySQL"], 
-    description: "A comprehensive restaurant discovery platform that helps users find and explore dining options across Indonesia with detailed information and reviews.", 
-    link: "https://github.com/Richeaa/Restaurant-Food-Website", 
-    image: Image1, 
-    category: "Web Development" 
+    title: "Movie Recommendation System", 
+    tools: ["Python", "Streamlit", "Jupyter Notebook"], 
+    description: "An intelligent movie recommendation engine that suggests similar films based on user preferences using cosine similarity algorithms.", 
+    link: "https://rich-movie-recommend-system.streamlit.app/", 
+    image: Image8, 
+    category: "Machine Learning" 
   },
   { 
     id: 3, 
-    title: "Bicycle Usage Pattern", 
-    tools: ["Python", "Streamlit"], 
-    description: "An in-depth data analysis project examining bicycle usage patterns influenced by weather conditions, weekdays, and seasonal factors.", 
-    link: "https://richcode.streamlit.app/", 
-    image: Image3, 
-    category: "Data Visualization" 
-  },
-  { 
-    id: 4, 
-    title: "Flick Tutor", 
-    tools: ["Bootstrap"], 
-    description: "A modern, responsive website connecting students with expert tutors across multiple subjects with an intuitive matching system.", 
-    link: "https://richeaa.github.io/Tutor-Website/", 
-    image: Image4, 
-    category: "Web Development" 
-  },
-  { 
-    id: 5, 
-    title: "Toko Mega Makmur", 
-    tools: ["WordPress", "Hostinger"], 
-    description: "A comprehensive e-commerce platform specializing in handyman equipment with integrated inventory management and customer support.", 
-    link: "https://tokomegamakmur.com/", 
-    image: Image5, 
-    category: "E-commerce" 
-  },
-  { 
-    id: 6, 
-    title: "Portfolio", 
-    tools: ["React", "Vite"], 
-    description: "A modern, responsive portfolio website showcasing projects and skills with smooth animations and clean design.", 
-    link: "#", 
-    image: Image6, 
-    category: "Web Development" 
-  },
-  { 
-    id: 7, 
     title: "Machine Learning Web Based", 
     tools: ["Python", "Django", "Tailwind CSS", "PostgreSQL"], 
     description: "A collaborative data science platform featuring machine learning models, data visualization, and predictive analytics tools.", 
@@ -74,13 +39,58 @@ const projects = [
     category: "Machine Learning" 
   },
   { 
-    id: 8, 
-    title: "Movie Recommendation System", 
-    tools: ["Python", "Streamlit", "Jupyter Notebook"], 
-    description: "An intelligent movie recommendation engine that suggests similar films based on user preferences using cosine similarity algorithms.", 
-    link: "https://rich-movie-recommend-system.streamlit.app/", 
-    image: Image8, 
+    id: 4, 
+    title: "Vehicle Classifier", 
+    tools: ["TensorFlow", "Streamlit", "Jupyter Notebook"], 
+    description: "A sophisticated image classification application that accurately distinguishes between cars and motorcycles using advanced deep learning models.", 
+    link: "https://vehicleclassifier.streamlit.app/", 
+    image: Image2, 
     category: "Machine Learning" 
+  },
+  { 
+    id: 5, 
+    title: "AkuLapar", 
+    tools: ["PHP", "JavaScript", "MySQL"], 
+    description: "A comprehensive restaurant discovery platform that helps users find and explore dining options across Indonesia with detailed information and reviews.", 
+    link: "https://github.com/Richeaa/Restaurant-Food-Website", 
+    image: Image1, 
+    category: "Web Development" 
+  },
+  { 
+    id: 6, 
+    title: "Flick Tutor", 
+    tools: ["Bootstrap"], 
+    description: "A modern, responsive website connecting students with expert tutors across multiple subjects with an intuitive matching system.", 
+    link: "https://richeaa.github.io/Tutor-Website/", 
+    image: Image4, 
+    category: "Web Development" 
+  },
+  { 
+    id: 7, 
+    title: "Toko Mega Makmur", 
+    tools: ["WordPress", "Hostinger"], 
+    description: "A comprehensive e-commerce platform specializing in handyman equipment with integrated inventory management and customer support.", 
+    link: "https://tokomegamakmur.com/", 
+    image: Image5, 
+    category: "E-commerce" 
+  },
+  { 
+    id: 8, 
+    title: "Portfolio", 
+    tools: ["React", "Vite"], 
+    description: "A modern, responsive portfolio website showcasing projects and skills with smooth animations and clean design.", 
+    link: "#", 
+    image: Image6, 
+    category: "Web Development" 
+  },
+  { 
+    id: 9, 
+    title: "Bicycle Usage Pattern", 
+    tools: ["Python", "Streamlit"], 
+    description: "An in-depth data analysis project examining bicycle usage patterns influenced by weather conditions, weekdays, and seasonal factors.", 
+    link: "https://richcode.streamlit.app/", 
+    image: Image3, 
+    category: "Data Visualization" 
   },
 ];
 
@@ -108,7 +118,7 @@ const Projects = () => {
         </div>
 
         <div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6"
           data-aos="fade-up"
           data-aos-delay="100"
         >
