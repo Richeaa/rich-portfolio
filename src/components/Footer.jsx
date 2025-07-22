@@ -16,7 +16,7 @@ const Footer = () => {
             
             <div className="flex space-x-4 mb-8"  data-aos="zoom-in"
           data-aos-delay="200">
-              <a href="https://wa.me/628114585676" target="_blank"
+              <a href="https://wa.me/6281522555130" target="_blank"
                   rel="noopener noreferrer" className="hover:text-sky-200 transition">
                 <FaWhatsapp className="w-6 h-6 md:w-8 md:h-8" />
               </a>
