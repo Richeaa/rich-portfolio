@@ -42,7 +42,7 @@ const Skills = () => {
           Skills & Technologies
           </h2>
           <div 
-            className="w-24 h-1.5 bg-gradient-to-r from-indigo-600 to-sky-400 mx-auto mt-4 rounded-full"
+            className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-sky-400 mx-auto mt-4 rounded-full"
             data-aos="zoom-in" 
             data-aos-offset="100"
           ></div>
@@ -69,7 +69,7 @@ const Skills = () => {
                   {skill.name}
                 </h3>
                 
-                <div className="w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 mt-4 group-hover:w-10 transition-all duration-300"></div>
+                <div className="w-0 h-0.5 bg-gradient-to-r from-blue-400 to-sky-400 mt-4 group-hover:w-10 transition-all duration-300"></div>
               </div>
             </div>
           ))}

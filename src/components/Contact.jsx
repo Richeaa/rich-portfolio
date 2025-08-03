@@ -52,10 +52,10 @@ const Contact = () => {
             Get in Touch
           </h2>
         <div 
-          className="w-24 h-1.5 bg-gradient-to-r from-indigo-600 to-sky-400 mx-auto mt-4 rounded-full"
-          data-aos="zoom-in" 
-          data-aos-offset="100"
-      ></div>
+            className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-sky-400 mx-auto mt-4 rounded-full"
+            data-aos="zoom-in" 
+            data-aos-offset="100"
+          ></div>
         </div>
 
             <div className="flex flex-wrap lg:flex-nowrap items-stretch px-3 md:px-0"> 

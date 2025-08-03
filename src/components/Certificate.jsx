@@ -28,10 +28,10 @@ const Certificate = () => {
             Certifications
           </h2>
           <div 
-            className="w-24 h-1.5 bg-gradient-to-r from-indigo-600 to-sky-400 mx-auto mt-4 rounded-full"
+            className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-sky-400 mx-auto mt-4 rounded-full"
             data-aos="zoom-in" 
             data-aos-offset="100"
-          />
+          ></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-16 md:mt-12 mb-16 px-4 md:px-0">  

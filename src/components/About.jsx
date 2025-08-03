@@ -25,7 +25,7 @@ const About = () => {
               About Me
             </h1>
             <div 
-            className="w-24 h-1.5 bg-gradient-to-r from-indigo-600 to-sky-400 mx-auto mt-4 rounded-full"
+            className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-sky-400 mx-auto mt-4 rounded-full"
             data-aos="zoom-in" 
             data-aos-offset="100"
           ></div>
@@ -41,7 +41,7 @@ const About = () => {
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
                 <div className="relative bg-gray-900/50 backdrop-blur-sm rounded-3xl p-2 border border-gray-700/50">
-                  <div className="bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-2xl p-4 hover:scale-105 transition-transform duration-500 ease-in-out">
+                  <div className="bg-gradient-to-br from-blue-600/20 to-sky-600/20 rounded-2xl p-4 hover:scale-105 transition-transform duration-500 ease-in-out">
                     <img 
                       src={ProfileLogo} 
                       alt="Profile"  
@@ -50,7 +50,7 @@ const About = () => {
                   </div>
                 </div>
                 <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-500 rounded-full animate-pulse"></div>
-                <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-purple-500 rounded-full animate-ping"></div>
+                <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-amber-500 rounded-full animate-ping"></div>
               </div>
             </div>
 
@@ -66,15 +66,15 @@ const About = () => {
                 
                 <div className="space-y-4 text-gray-300 leading-relaxed">
                   <p className="text-base lg:text-lg">
-                    <strong className="text-white">6th-semester Information System student</strong> at President University with a <strong className="text-blue-400">GPA of 3.90</strong>, concentrating in <strong className="text-purple-400">Data Science</strong>.
+                    <strong className="text-white">6th-semester Information System student</strong> at President University with a GPA of 3.90, concentrating in Data Science.
                   </p>
                   
                   <p className="text-base lg:text-lg">
-                    Dedicated and detail-oriented, with a strong passion for organizing and analyzing data. I specialize in <strong className="text-green-400">Python</strong> and <strong className="text-blue-400">SQL</strong>, with extensive experience using analytics tools like <strong className="text-orange-400">Power BI</strong> to derive insights and support data-driven decisions.
+                    Dedicated and detail-oriented, with a strong passion for organizing and analyzing data. During my college years, i have learned start from web development, business process, and analyze data. Currently focuses on data analysis using Python, SQL, Excel, and Power BI to derive insights and support data-driven decisions.
                   </p>
                   
                   <p className="text-base lg:text-lg">
-                    During my college years, I've actively participated in internal organizations and internship, which have honed my skills in <strong className="text-indigo-400">leadership</strong>, <strong className="text-pink-400">teamwork</strong>, and <strong className="text-cyan-400">problem-solving</strong>.
+                    Besides that, I've actively participated in internal organizations and internship, which have honed my skills in leadership, teamwork, andproblem-solving.
                   </p>
                 </div>
 
@@ -82,7 +82,7 @@ const About = () => {
                 <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
                   <a 
                     href="#projects" 
-                    className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-lg text-center"
+                    className="px-6 py-3 bg-gradient-to-r from-blue-600 to-sky-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-sky-700 transition-all duration-300 hover:scale-105 hover:shadow-lg text-center"
                   >
                     View My Projects
                   </a>
