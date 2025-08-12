@@ -3,7 +3,7 @@ import ProfileLogo from "../assets/Profil.png";
 const About = () => {
   const highlights = [
     { number: "3.90", label: "GPA", icon: "🎓" },
-    { number: "6th", label: "Semester", icon: "📚" },
+    { number: "7th", label: "Semester", icon: "📚" },
     { number: "6+", label: "Volunteer Experience", icon: "🔎" },
     { number: "8+", label: "Projects Completed", icon: "🚀" }
   ];
