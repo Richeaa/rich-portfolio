@@ -66,7 +66,7 @@ const About = () => {
                 
                 <div className="space-y-4 text-gray-300 leading-relaxed">
                   <p className="text-base lg:text-lg">
-                    <strong className="text-white">6th-semester Information System student</strong> at President University with a GPA of 3.90, concentrating in Data Science.
+                    <strong className="text-white">7th-semester Information System student</strong> at President University with a GPA of 3.90, concentrating in Data Science.
                   </p>
                   
                   <p className="text-base lg:text-lg">
