@@ -2,7 +2,7 @@ import {
   FaHtml5, FaCss3, FaJs, FaBootstrap, FaWordpress, FaPython
 } from "react-icons/fa";
 import { 
-  SiTailwindcss, SiPhp, SiJupyter, SiPostgresql, SiStreamlit, SiDjango, SiTensorflow, SiGooglecolab, SiMiro 
+  SiTailwindcss, SiPhp, SiJupyter, SiPostgresql, SiStreamlit, SiDjango, SiTensorflow, SiGooglecolab, SiMiro, SiLooker 
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import powerbi from "../assets/SkillsAsset/1.png";
@@ -29,6 +29,7 @@ const Skills = () => {
     { name: "TensorFlow", icon: <SiTensorflow />, color: "text-yellow-600" },
     { name: "Keras", icon: <img src={keras} alt="Keras" className="w-12 h-12" /> },
     { name: "Power BI", icon: <img src={powerbi} alt="Power BI" className="w-12 h-12" /> },
+    { name: "Looker Studio", icon: <SiLooker />, color: "text-sky-400"},
     { name: "Lucid Chart", icon: <img src={lucid} alt="Lucid Chart" className="w-12 h-12" /> },
     { name: "Miro", icon: <SiMiro />, color: "bg-yellow-500 rounded-lg"},
   ];
