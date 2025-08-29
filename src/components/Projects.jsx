@@ -8,11 +8,21 @@ import Image6 from '../assets/ProjectAsset/6.png';
 import Image7 from '../assets/ProjectAsset/7.png';
 import Image8 from '../assets/ProjectAsset/8.png';
 import Image9 from '../assets/ProjectAsset/9.png';
+import Image10 from '../assets/ProjectAsset/10.png';
 import { FaExternalLinkAlt, FaTimes } from "react-icons/fa";
 
 const projects = [
   { 
     id: 1, 
+    title: "Academic Schedule Optimization", 
+    tools: ["Python", "Django", "PostgreSQL"], 
+    description: "Academic website application that helps lecturers to be assigned to courses and class schedules whether it's manually or automatically using random forest algorithm.", 
+    link: "https://github.com/Richeaa/academic-project", 
+    image: Image10, 
+    category: "Web Development & Machine Learning" 
+  },
+  { 
+    id: 2, 
     title: "Amazon Sales Analysis Dashboard", 
     tools: ["Power BI", "DAX", "Power Query"], 
     description: "A comprehensive Power BI dashboard that visualizes Amazon's sales performance related to sales patterns, product performance, and regional trends.", 
@@ -21,7 +31,7 @@ const projects = [
     category: "Data Analyst & Visualization" 
   },
   { 
-    id: 2, 
+    id: 3, 
     title: "Movie Recommendation System", 
     tools: ["Python", "Streamlit", "Jupyter Notebook"], 
     description: "An intelligent movie recommendation engine that suggests similar films based on user preferences using cosine similarity algorithms.", 
@@ -30,7 +40,7 @@ const projects = [
     category: "Machine Learning" 
   },
   { 
-    id: 3, 
+    id: 4, 
     title: "Machine Learning Web Based", 
     tools: ["Python", "Django", "Tailwind CSS", "PostgreSQL"], 
     description: "A collaborative data science platform featuring machine learning models, data visualization, and predictive analytics tools.", 
@@ -39,7 +49,7 @@ const projects = [
     category: "Machine Learning" 
   },
   { 
-    id: 4, 
+    id: 5, 
     title: "Vehicle Classifier", 
     tools: ["TensorFlow", "Streamlit", "Jupyter Notebook"], 
     description: "A sophisticated image classification application that accurately distinguishes between cars and motorcycles using advanced deep learning models.", 
@@ -48,7 +58,7 @@ const projects = [
     category: "Machine Learning" 
   },
   { 
-    id: 5, 
+    id: 6, 
     title: "AkuLapar", 
     tools: ["PHP", "JavaScript", "MySQL"], 
     description: "A comprehensive restaurant discovery platform that helps users find and explore dining options across Indonesia with detailed information and reviews.", 
@@ -57,7 +67,7 @@ const projects = [
     category: "Web Development" 
   },
   { 
-    id: 6, 
+    id: 7, 
     title: "Flick Tutor", 
     tools: ["Bootstrap"], 
     description: "A modern, responsive website connecting students with expert tutors across multiple subjects with an intuitive matching system.", 
@@ -66,7 +76,7 @@ const projects = [
     category: "Web Development" 
   },
   { 
-    id: 7, 
+    id: 8, 
     title: "Toko Mega Makmur", 
     tools: ["WordPress", "Hostinger"], 
     description: "A comprehensive e-commerce platform specializing in handyman equipment with integrated inventory management and customer support.", 
@@ -75,7 +85,7 @@ const projects = [
     category: "E-commerce" 
   },
   { 
-    id: 8, 
+    id: 9, 
     title: "Portfolio", 
     tools: ["React", "Vite"], 
     description: "A modern, responsive portfolio website showcasing projects and skills with smooth animations and clean design.", 
@@ -84,7 +94,7 @@ const projects = [
     category: "Web Development" 
   },
   { 
-    id: 9, 
+    id: 10, 
     title: "Bicycle Usage Pattern", 
     tools: ["Python", "Streamlit"], 
     description: "An in-depth data analysis project examining bicycle usage patterns influenced by weather conditions, weekdays, and seasonal factors.", 
