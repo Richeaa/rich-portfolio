@@ -78,9 +78,9 @@ const projects = [
   { 
     id: 8, 
     title: "Toko Mega Makmur", 
-    tools: ["WordPress", "Hostinger"], 
+    tools: ["WordPress", "Hostinger", "Google Search Console", "SEO"], 
     description: "A comprehensive e-commerce platform specializing in handyman equipment with integrated inventory management and customer support.", 
-    link: "https://tokomegamakmur.com/", 
+    link: "https://tokomegamakmur.id/", 
     image: Image5, 
     category: "E-commerce" 
   },

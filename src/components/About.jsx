@@ -1,11 +1,15 @@
-import ProfileLogo from "../assets/Profil.png";
+import ProfileLogo from "../assets/AboutAsset/Profil.png";
+import gpa from "../assets/AboutAsset/gpa.png";
+import semester from "../assets/AboutAsset/semester.png";
+import projects from "../assets/AboutAsset/projects.png";
+import volunteer from "../assets/AboutAsset/volunteer.png";
 
 const About = () => {
   const highlights = [
-    { number: "3.91", label: "GPA", icon: "🎓" },
-    { number: "7th", label: "Semester", icon: "📚" },
-    { number: "6+", label: "Volunteer Experience", icon: "🔎" },
-    { number: "8+", label: "Projects Completed", icon: "🚀" }
+    { number: "3.91", label: "GPA", image: gpa },
+    { number: "7th", label: "Semester", image: semester },
+    { number: "6+", label: "Volunteer Experience", image: volunteer },
+    { number: "10+", label: "Projects Completed", image: projects },
   ];
 
   return (
@@ -66,7 +70,7 @@ const About = () => {
                 
                 <div className="space-y-4 text-gray-300 leading-relaxed">
                   <p className="text-base lg:text-lg">
-                    <strong className="text-white">7th-semester Information System student</strong> at President University with a GPA of 3.90, concentrating in Data Science.
+                    <strong className="text-white">7th-semester Information System student</strong> at President University with a GPA of 3.91, concentrating in Data Science.
                   </p>
                   
                   <p className="text-base lg:text-lg">
@@ -108,7 +112,11 @@ const About = () => {
                 className="text-center p-6 bg-gray-900/30 backdrop-blur-sm rounded-2xl border border-gray-700/50 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 group"
               >
                 <div className="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300">
-                  {item.icon}
+                  <img 
+                  src={item.image} 
+                  alt={item.number} 
+                  className="w-8 h-8 mx-auto"
+                />
                 </div>
                 <div className="text-2xl lg:text-3xl font-bold text-white mb-1">
                   {item.number}
