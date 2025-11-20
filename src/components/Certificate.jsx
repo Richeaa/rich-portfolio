@@ -19,22 +19,26 @@ const Certificate = () => {
   return (
     <>
       <section id="certificate" className="container mx-auto my-12 p-4 lg:mt-34 mt-16 md:py-12">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
+          <p className="text-blue-400 text-sm font-medium tracking-wider uppercase mb-3"
+            data-aos="fade-up">
+            My Achievements
+          </p>
           <h2 
-            className="md:text-4xl text-2xl font-extrabold bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent pt-6" 
+            className="md:text-4xl text-2xl font-extrabold text-white mb-4" 
             data-aos="fade-up" 
             data-aos-offset="200"
           >
             Certifications
           </h2>
           <div 
-            className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-sky-400 mx-auto mt-4 rounded-full"
+            className="w-16 h-1 bg-blue-500 mx-auto"
             data-aos="zoom-in" 
-            data-aos-offset="100"
+            data-aos-delay="200"
           ></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-16 md:mt-12 mb-16 px-4 md:px-0">  
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16 px-4 md:px-0">  
           {certificates.map((cert, index) => (
             <div 
               key={cert.id}

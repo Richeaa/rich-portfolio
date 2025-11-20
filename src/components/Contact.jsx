@@ -47,14 +47,18 @@ const Contact = () => {
     return (
         <section id="contact" className="relative overflow-x-hidden container mx-auto my-12 p-4 mt-16 md:py-12 flex flex-col justify-center">
              <div className="text-center mb-12">
-          <h2 className="md:text-4xl text-2xl font-extrabold bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent pt-6" 
-              data-aos="fade-up" data-aos-offset="200">
+            <p className="text-blue-400 text-sm font-medium tracking-wider uppercase mb-3"
+            data-aos="fade-up">
             Get in Touch
+            </p>
+          <h2 className="md:text-4xl text-2xl font-extrabold text-white mb-4" 
+              data-aos="fade-up" data-aos-offset="200">
+            Contact Me
           </h2>
-        <div 
-            className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-sky-400 mx-auto mt-4 rounded-full"
+            <div 
+            className="w-16 h-1 bg-blue-500 mx-auto"
             data-aos="zoom-in" 
-            data-aos-offset="100"
+            data-aos-delay="200"
           ></div>
         </div>
 

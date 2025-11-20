@@ -114,17 +114,20 @@ const Projects = () => {
           className="text-center mb-16"
           data-aos="fade-up"
         >
+          <p className="text-blue-400 text-sm font-medium tracking-wider uppercase mb-3"
+            data-aos="fade-up">
+            Explore My Work
+          </p>
           <h2 
-            className="text-2xl md:text-4xl font-extrabold bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent mb-6"
+            className="text-2xl md:text-4xl font-extrabold text-white mb-4"
             data-aos="fade-up" 
           >
             Featured Projects
           </h2>
-
           <div 
-            className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-sky-400 mx-auto mt-4 rounded-full"
+            className="w-16 h-1 bg-blue-500 mx-auto"
             data-aos="zoom-in" 
-            data-aos-offset="100"
+            data-aos-delay="200"
           ></div>
         </div>
 
