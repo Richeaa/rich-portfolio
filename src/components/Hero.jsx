@@ -5,7 +5,7 @@ import CV from '../assets/CV/RichEdrickAnthonios_CurriculumVitae.pdf'
 
 const Hero = () => {
   return (
-    <div className="container mx-auto md:mt-48 mt-20 h-auto flex justify-between flex-wrap">
+    <div  className="container mx-auto md:mt-48 mt-20 h-auto flex justify-between flex-wrap">
 
       <div className=" w-full lg:w-3/5 h-auto order-2 lg:order-1 text-sky-100 p-6 text-center lg:text-left">
         <h1 className="font-bold lg:text-5xl text-2xl mt-8 lg:mt-36 lg:ms-9 mb-5" data-aos="fade-right"  data-aos-delay="100">Hi! 欢迎</h1>
