@@ -13,6 +13,7 @@ import sqlserver from "../assets/SkillsAsset/5.png";
 import telerik from "../assets/SkillsAsset/6.png";
 import yolo from "../assets/SkillsAsset/7.png";
 import opencv from "../assets/SkillsAsset/8.png";
+import scikit from "../assets/SkillsAsset/9.png";
 
 
 const Skills = () => {
@@ -77,6 +78,7 @@ const Skills = () => {
         { name: "Streamlit", icon: <SiStreamlit />, color: "text-red-500" },
         { name: "Yolo", icon: <img src={yolo} alt="Yolo" className="w-10 h-10" /> },
         { name: "OpenCV", icon: <img src={opencv} alt="OpenCV" className="w-10 h-10" /> },
+        { name: "Scikit-Learn", icon: <img src={scikit} alt="Scikit-Learn" className="w-10 h-10" /> },
       ]
     },
     {
