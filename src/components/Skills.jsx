@@ -11,6 +11,9 @@ import lucid from "../assets/SkillsAsset/3.png";
 import vite from "../assets/SkillsAsset/4.png";
 import sqlserver from "../assets/SkillsAsset/5.png";
 import telerik from "../assets/SkillsAsset/6.png";
+import yolo from "../assets/SkillsAsset/7.png";
+import opencv from "../assets/SkillsAsset/8.png";
+
 
 const Skills = () => {
   const skillCategories = [
@@ -72,6 +75,8 @@ const Skills = () => {
         { name: "TensorFlow", icon: <SiTensorflow />, color: "text-yellow-600" },
         { name: "Keras", icon: <img src={keras} alt="Keras" className="w-10 h-10" /> },
         { name: "Streamlit", icon: <SiStreamlit />, color: "text-red-500" },
+        { name: "Yolo", icon: <img src={yolo} alt="Yolo" className="w-10 h-10" /> },
+        { name: "OpenCV", icon: <img src={opencv} alt="OpenCV" className="w-10 h-10" /> },
       ]
     },
     {
