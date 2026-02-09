@@ -14,6 +14,7 @@ import telerik from "../assets/SkillsAsset/6.png";
 import yolo from "../assets/SkillsAsset/7.png";
 import opencv from "../assets/SkillsAsset/8.png";
 import scikit from "../assets/SkillsAsset/9.png";
+import firebase from "../assets/SkillsAsset/10.png";
 
 
 const Skills = () => {
@@ -48,6 +49,7 @@ const Skills = () => {
         { name: "Django", icon: <SiDjango />, color: "text-green-500" },
         { name: "WordPress", icon: <FaWordpress />, color: "text-blue-400" },
         { name: "Docker", icon: <FaDocker />, color: "text-blue-500" },
+        { name: "Firebase", icon: <img src={firebase} alt="Firebase" className="w-10 h-10" /> },
       ]
     },
     {

@@ -3,7 +3,7 @@ import ProfileLogo from "../assets/AboutAsset/Profil.png";
 const About = () => {
   const highlights = [
     { 
-      number: "3.91", 
+      number: "3.92", 
       label: "GPA",
       icon: (
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -12,7 +12,7 @@ const About = () => {
       )
     },
     { 
-      number: "7th", 
+      number: "8th", 
       label: "Semester",
       icon: (
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -30,7 +30,7 @@ const About = () => {
       )
     },
     { 
-      number: "10+", 
+      number: "12+", 
       label: "Projects Completed",
       icon: (
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -100,7 +100,7 @@ const About = () => {
                 
                 <div className="space-y-4 text-gray-300 leading-relaxed">
                   <p className="text-base lg:text-lg">
-                    <strong className="text-white">7th-semester Information System student</strong> at President University with a GPA of 3.91, concentrating in Data Science.
+                    <strong className="text-white">Final-Year Information System student</strong> at President University with a GPA of 3.92, concentrating in Data Science.
                   </p>
                   
                   <p className="text-base lg:text-lg">
