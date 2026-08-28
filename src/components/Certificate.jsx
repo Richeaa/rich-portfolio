@@ -60,7 +60,7 @@ const Certificate = () => {
       </div>
 
       <div className="flex justify-center" data-aos="fade-up">
-        
+        <a>
           href="https://www.linkedin.com/in/richea/"
           target="_blank"
           rel="noopener noreferrer"
