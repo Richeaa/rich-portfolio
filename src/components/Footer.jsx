@@ -1,59 +1,82 @@
 import Wavify from 'react-wavify';
 import { FaWhatsapp, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
+
 const Footer = () => {
   return (
-    <section className="relative text-white pt-20 pb-32 overflow-hidden">
-      <div className="relative z-10 container mx-auto px-4 md:px-6">
-        <div className="flex flex-col items-center text-center">
-          <h2 className="text-2xl md:text-4xl font-bold mb-4" data-aos="fade-up">
-            Let&apos;s Connect
-          </h2>
-          <p
-            className="mb-8 text-slate-400 max-w-md md:text-lg"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            Interested in working together or have any questions? Feel free to reach out!
-          </p>
-
-          <div className="flex space-x-4 mb-10" data-aos="zoom-in" data-aos-delay="200">
-            {[
-              { href: "https://wa.me/6281522555130", Icon: FaWhatsapp },
-              { href: "https://instagram.com/rich.ea", Icon: FaInstagram },
-              { href: "https://www.linkedin.com/in/richea/", Icon: FaLinkedin },
-              { href: "https://github.com/Richeaa", Icon: FaGithub },
-            ].map(({ href, Icon }) => (
-              
-                key={href}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-11 h-11 flex items-center justify-center rounded-full bg-surface-800 border border-surface-border text-slate-400 hover:text-brand-400 hover:border-brand-400/40 transition-colors"
-              >
-                <Icon className="w-5 h-5" />
+    <section className="relative  text-white pt-20 pb-32 overflow-hidden">
+      <div className="relative z-10">
+        <div className="container mx-auto px-3 md:px-0">
+          <div className="flex flex-col items-center">
+            <h2 className="md:text-4xl text-3xl font-bold mb-4" data-aos="fade-up">Let's Connect</h2>
+            <p className="mb-8 text-center md:text-2xl text-md px-3"  data-aos="fade-up"
+          data-aos-delay="100">
+              Interested in working together or have any questions? Feel free to reach out!
+            </p>
+            
+            <div className="flex space-x-4 mb-8"  data-aos="zoom-in"
+          data-aos-delay="200">
+              <a href="https://wa.me/6281522555130" target="_blank"
+                  rel="noopener noreferrer" className="hover:text-sky-200 transition">
+                <FaWhatsapp className="w-6 h-6 md:w-8 md:h-8" />
               </a>
-            ))}
+              <a href="https://instagram.com/rich.ea" target="_blank"
+                  rel="noopener noreferrer" className="hover:text-sky-200 transition">
+                <FaInstagram className="w-6 h-6 md:w-8 md:h-8" />
+              </a>
+              <a href="https://www.linkedin.com/in/richea/" target="_blank"
+                  rel="noopener noreferrer" className="hover:text-sky-200 transition">
+              <FaLinkedin className="w-6 h-6 md:w-8 md:h-8" />
+              </a>
+              <a href="https://github.com/Richeaa" target="_blank"
+                  rel="noopener noreferrer" className="hover:text-sky-200 transition">
+              <FaGithub className="w-6 h-6 md:w-8 md:h-8" />
+              </a>
+            </div>
+            
+            <p className="md:text-xl text-lg text-sky-100 text-center"  data-aos="fade-up"
+          data-aos-delay="300">
+              © {new Date().getFullYear()} Richeaa. All rights reserved.
+            </p>
           </div>
-
-          <p className="text-sm text-slate-500 font-mono" data-aos="fade-up" data-aos-delay="300">
-            © {new Date().getFullYear()} Richeaa. All rights reserved.
-          </p>
         </div>
       </div>
 
       <div className="absolute bottom-0 left-0 w-full">
+        
         <Wavify
-          fill="#0a84ff"
+          fill="#0ea5e9"
           paused={false}
-          options={{ height: 30, amplitude: 50, speed: 0.2, points: 5 }}
-          style={{ position: 'absolute', bottom: 0, width: '100%', opacity: 0.35 }}
+          options={{
+            height: 30,
+            amplitude: 60,
+            speed: 0.2,
+            points: 5
+          }}
+          style={{
+            position: 'absolute',
+            bottom: 0,
+            width: '100%',
+            opacity: 0.7
+          }}
         />
+        
+       
         <Wavify
-          fill="#0052b4"
+          fill="#0284c7"
           paused={false}
-          options={{ height: 40, amplitude: 40, speed: 0.15, points: 4 }}
-          style={{ position: 'absolute', bottom: 0, width: '100%', opacity: 0.25 }}
+          options={{
+            height: 40,
+            amplitude: 50,
+            speed: 0.15,
+            points: 4
+          }}
+          style={{
+            position: 'absolute',
+            bottom: 0,
+            width: '100%',
+            opacity: 0.5
+          }}
         />
       </div>
     </section>
