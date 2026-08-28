@@ -18,17 +18,20 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-6 left-1/2 -translate-x-1/2 w-11/12 max-w-4xl z-50">
+      {/* Glass pill container */}
       <div
         className="backdrop-blur-xl bg-surface-900/70 rounded-full border border-surface-border shadow-bento"
         data-aos="fade-down"
       >
         <div className="relative flex h-14 items-center justify-between px-5">
+          {/* Left: Logo mark */}
           <a href="#" className="flex items-center gap-2 text-slate-300 hover:text-brand-300 transition-colors">
             <span className="font-mono text-sm font-semibold tracking-tight text-brand-400">
               rich<span className="text-slate-500">.</span>bi
             </span>
           </a>
 
+          {/* Center: Navigation Links */}
           <div className="hidden md:flex flex-1 justify-center">
             <div className="flex space-x-6">
               {navigation.map((item) => (
@@ -43,6 +46,7 @@ const Navbar = () => {
             </div>
           </div>
 
+          {/* Right: Command palette trigger + GitHub */}
           <div className="hidden md:flex items-center gap-3">
             <button
               onClick={openCommandPalette}
@@ -52,7 +56,7 @@ const Navbar = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
               </svg>
               Query
-              <kbd className="text-[10px] text-slate-500 border border-surface-border rounded px-1">CMD K</kbd>
+              <kbd className="text-[10px] text-slate-500 border border-surface-border rounded px-1">⌘K</kbd>
             </button>
 
             
@@ -71,6 +75,7 @@ const Navbar = () => {
             </a>
           </div>
 
+          {/* Hamburger (mobile) */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -91,6 +96,7 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Mobile dropdown */}
       {isOpen && (
         <div className="md:hidden mt-2">
           <div className="backdrop-blur-xl bg-surface-900/80 rounded-3xl border border-surface-border shadow-bento">
@@ -109,7 +115,7 @@ const Navbar = () => {
                 onClick={openCommandPalette}
                 className="w-full flex items-center justify-center gap-2 text-slate-300 hover:text-white px-3 py-2.5 mt-2 rounded-xl bg-surface-700/60 border border-surface-border font-mono text-sm"
               >
-                Quick Navigate
+                Quick Navigate ⌘K
               </button>
               <div className="pt-2 mt-2 border-t border-surface-border">
                 
