@@ -52,7 +52,7 @@ const Hero = () => {
           </div>
 
           <div className="relative z-10 flex flex-wrap gap-3">
-            <a>
+            <a
               href={CV}
               download="RichEdrickAnthonios_CurriculumVitae.pdf"
               className="flex items-center gap-2 text-sm font-semibold text-white bg-brand-500 hover:bg-brand-600 px-6 py-3.5 rounded-full transition-colors duration-200 shadow-glow-brand"
@@ -62,7 +62,7 @@ const Hero = () => {
                 <path d="M5 20h14v-2H5v2Zm7-4 5-5h-3V4h-4v7H7l5 5Z"></path>
               </svg>
             </a>
-            <a>
+            <a
               href="#contact"
               className="flex items-center gap-2 text-sm font-semibold text-slate-300 border border-surface-border hover:border-brand-400/50 hover:text-white px-6 py-3.5 rounded-full transition-colors duration-200"
             >
@@ -155,7 +155,7 @@ const Hero = () => {
         >
           <div className="relative z-10 text-center">
             <p className="font-mono text-2xl md:text-3xl font-bold text-white tabular-nums">
-              3.92
+              3.93
             </p>
             <p className="text-slate-500 text-xs mt-1">GPA</p>
           </div>
