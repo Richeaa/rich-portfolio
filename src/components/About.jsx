@@ -151,7 +151,7 @@ const About = () => {
             >
               View Projects
             </a>
-            
+            <a>
               href="#contact"
               className="px-5 py-2.5 border border-surface-border hover:border-brand-400/50 text-slate-300 hover:text-white text-sm font-semibold rounded-full transition-colors"
             >
