@@ -145,7 +145,7 @@ const About = () => {
           </div>
 
           <div className="relative z-10 flex flex-wrap gap-3 mt-6">
-            <a>
+            
               href="#projects"
               className="px-5 py-2.5 bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold rounded-full transition-colors"
             >
