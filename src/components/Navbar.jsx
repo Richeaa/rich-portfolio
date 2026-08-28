@@ -4,41 +4,41 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navigation = [
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Certificate', href: '#certificate' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'About', href: '#about', current: false },
+    { name: 'Projects', href: '#projects', current: false },
+    { name: 'Certificate', href: '#certificate', current: false },
+    { name: 'Contact', href: '#contact', current: false },
   ];
 
-  const openCommandPalette = () => {
-    window.dispatchEvent(new CustomEvent('open-command-palette'));
-    setIsOpen(false);
-  };
-
   return (
-    <nav className="fixed top-6 left-1/2 -translate-x-1/2 w-11/12 max-w-4xl z-50">
-      {/* Glass pill container */}
-      <div
-        className="backdrop-blur-xl bg-surface-900/70 rounded-full border border-surface-border shadow-bento"
+    <nav className="fixed top-8 left-1/2 -translate-x-1/2 w-11/12 max-w-4xl z-50">
+      {/* Glass Container */}
+      <div 
+        className="backdrop-blur-md bg-white/10 rounded-full border border-white/20 shadow-lg"
         data-aos="fade-down"
       >
-        <div className="relative flex h-14 items-center justify-between px-5">
-          {/* Left: Logo mark */}
-          <a href="#" className="flex items-center gap-2 text-slate-300 hover:text-brand-300 transition-colors">
-            <span className="font-mono text-sm font-semibold tracking-tight text-brand-400">
-              rich<span className="text-slate-500">.</span>bi
-            </span>
-          </a>
+        <div className="relative flex h-16 items-center justify-between px-6">
+          {/* Left: Home Icon */}
+          <div className="flex items-center">
+            <div className="text-gray-300 hover:text-sky-200 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+              </svg>
+            </div>
+          </div>
 
-          {/* Center: Navigation Links */}
+          {/* Center: Navigation Links (hidden on small screens) */}
           <div className="hidden md:flex flex-1 justify-center">
-            <div className="flex space-x-6">
+            <div className="flex space-x-8">
               {navigation.map((item) => (
-                
+                <a
                   key={item.name}
                   href={item.href}
-                  className="px-2 py-2 text-sm font-medium text-slate-400 hover:text-white transition-colors"
+                  className={`px-3 py-2 text-sm font-medium transition-colors ${
+                    item.current
+                      ? 'text-white'
+                      : 'text-gray-300 hover:text-sky-200'
+                  }`}
                 >
                   {item.name}
                 </a>
@@ -46,26 +46,20 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Right: Command palette trigger + GitHub */}
-          <div className="hidden md:flex items-center gap-3">
-            <button
-              onClick={openCommandPalette}
-              className="flex items-center gap-2 text-xs text-slate-400 hover:text-white bg-surface-700/60 hover:bg-surface-700 border border-surface-border rounded-full px-3 py-1.5 transition-colors font-mono"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-3.5 h-3.5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-              </svg>
-              Query
-              <kbd className="text-[10px] text-slate-500 border border-surface-border rounded px-1">⌘K</kbd>
-            </button>
-
-            
+          {/* Right: GitHub Icon */}
+          <div className="hidden md:flex">
+            <a
               href="https://github.com/Richeaa"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-brand-300 transition-colors"
+              className="text-gray-300 hover:text-sky-200 transition-colors"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="h-6 w-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                className="h-7 w-7"
+              >
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -75,11 +69,11 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Hamburger (mobile) */}
+          {/* Hamburger Menu Button (visible on small screens) */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center rounded-full p-2 text-slate-400 hover:bg-surface-700/60 hover:text-white transition-colors"
+              className="inline-flex items-center justify-center rounded-md p-2 text-gray-300 hover:bg-white/10 hover:text-sky-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white/50 transition-colors"
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? (
@@ -96,35 +90,38 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile dropdown */}
+      {/* Dropdown Panel (visible when hamburger is clicked) */}
       {isOpen && (
         <div className="md:hidden mt-2">
-          <div className="backdrop-blur-xl bg-surface-900/80 rounded-3xl border border-surface-border shadow-bento">
+          <div className="backdrop-blur-md bg-white/10 rounded-2xl border border-white/20 shadow-lg">
             <div className="space-y-1 px-4 py-3">
               {navigation.map((item) => (
-                
+                <a
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="block rounded-xl px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-surface-700/60 transition-colors"
+                  className={`block rounded-lg px-3 py-2 text-base font-medium transition-colors ${
+                    item.current
+                      ? 'text-white bg-white/10'
+                      : 'text-gray-300 hover:text-sky-200 hover:bg-white/10'
+                  }`}
                 >
                   {item.name}
                 </a>
               ))}
-              <button
-                onClick={openCommandPalette}
-                className="w-full flex items-center justify-center gap-2 text-slate-300 hover:text-white px-3 py-2.5 mt-2 rounded-xl bg-surface-700/60 border border-surface-border font-mono text-sm"
-              >
-                Quick Navigate ⌘K
-              </button>
-              <div className="pt-2 mt-2 border-t border-surface-border">
-                
+              <div className="pt-2 mt-2 border-t border-white/20">
+                <a
                   href="https://github.com/Richeaa"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 text-slate-300 hover:text-brand-300 px-3 py-2 rounded-xl hover:bg-surface-700/60 transition-colors"
+                  className="flex items-center justify-center gap-2 text-gray-300 hover:text-sky-200 px-3 py-2 rounded-lg hover:bg-white/10 transition-colors"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="h-5 w-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    className="h-5 w-5"
+                  >
                     <path
                       fillRule="evenodd"
                       clipRule="evenodd"
