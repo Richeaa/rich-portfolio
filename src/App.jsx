@@ -1,6 +1,5 @@
 import Bg from './components/Bg'
 import Navbar from './components/Navbar'
-import CommandPalette from './components/CommandPalette'
 import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
@@ -24,9 +23,9 @@ function App() {
 
   return (
     <>
+    
     <Bg />
     <Navbar />
-    <CommandPalette />
     <Hero />
     <About />
     <Skills />
