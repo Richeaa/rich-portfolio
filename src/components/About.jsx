@@ -131,7 +131,7 @@ const About = () => {
               <strong className="text-white font-semibold">
                 Final-Year Information System student
               </strong>{" "}
-              at President University with a GPA of 3.93, concentrating in Data Science.
+              at President University with a GPA of 3.92, concentrating in Data Science.
             </p>
             <p>
               Dedicated and detail-oriented, with a strong passion for organizing and
