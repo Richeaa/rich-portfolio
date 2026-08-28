@@ -24,7 +24,7 @@ const Footer = () => {
               { href: "https://www.linkedin.com/in/richea/", Icon: FaLinkedin },
               { href: "https://github.com/Richeaa", Icon: FaGithub },
             ].map(({ href, Icon }) => (
-              <a
+              <a>
                 key={href}
                 href={href}
                 target="_blank"
