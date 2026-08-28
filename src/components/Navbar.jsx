@@ -32,7 +32,7 @@ const Navbar = () => {
           <div className="hidden md:flex flex-1 justify-center">
             <div className="flex space-x-6">
               {navigation.map((item) => (
-                
+                <a>
                   key={item.name}
                   href={item.href}
                   className="px-2 py-2 text-sm font-medium text-slate-400 hover:text-white transition-colors"
