@@ -97,7 +97,6 @@ const About = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-6 gap-4 md:gap-5">
 
-        {/* Foto profil */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -115,7 +114,6 @@ const About = () => {
           </div>
         </motion.div>
 
-        {/* Bio */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -162,7 +160,6 @@ const About = () => {
           </div>
         </motion.div>
 
-        {/* KPI tiles */}
         {highlights.map((item, index) => (
           <motion.div
             key={item.label}
